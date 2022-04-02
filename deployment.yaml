@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dis-sales
+  namespace: order-domain
+  labels:
+    app: dis-sales
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dis-sales
+  template:
+    metadata:
+      labels:
+        app: dis-sales
+    spec:
+      containers:
+      - name: dis-sales
+        image: dis-sales:changeMePlease
+        ports:
+        - containerPort: 8080
+   
