@@ -7,8 +7,8 @@ pipeline {
     }
    
 	 environment{
-        DOCKER_USERNAME = credentials('DOCKER_USERNAME')
-        DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
+        DOCKER_USERNAME = credentials('NAVJOT_DOCKER_USERNAME')
+        DOCKER_PASSWORD = credentials('NAVJOT_DOCKER_PASSWORD')
     }
 	
     stages {
