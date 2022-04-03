@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: dis-sales
-        image: dis-sales:changeMePlease
+        image: navjotdis/dis-orders:changeMePlease
         ports:
         - containerPort: 8080
    
